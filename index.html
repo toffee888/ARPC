@@ -26,6 +26,24 @@
   margin: auto;
   width: 80%;
 }
+
+  #hp{
+  top: 50%;
+  left: 50%;
+  font-size: 5vw;
+  color: white;
+  margin: auto;
+  display: none;
+}
+  
+  #pc{
+  top: 50%;
+  left: 50%;
+  font-size: 5vw;
+  color: white;
+  margin: auto;
+  display: none;
+}
 </style>
     
   </head>
@@ -39,6 +57,10 @@
     
     <h2>Semoga andalah juaranya!</h2>
     <br></br>
+    <p> Saya menggunakan: </p>
+    <p onclick="hp()">Handphone/Tablet</p> <p onclick="pc()"> PC</p>
+    
+    <div id="hpt">
     <h3>Tutorial (Handphone/Tablet):</h3>
     
     <p>Gerakan hp ke kanan dan kiri untuk mencari piala</p>
@@ -48,19 +70,25 @@
     <p>Gunakan satu jari untuk memutar piala </p>
     <p>Gunakan dua jari untuk membesar/mengecilkan objek (Pinch/Zoom)</p>
     <p>Gunakan tiga jari untuk mengerakan piala keatas, kebawah dan kesamping (Drag)</p>
+    </div>
     
     <br></br>
+    
+    <div id="pct">
     <h3>Tutorial (PC):</h3>
     
     <p>Click kiri dan gerakan mouse untuk memutar piala</p>
     <p>Click kiri dan kanan untuk mengerakan piala</p>
     <p>Gunakan mouse wheel untuk membesar kecilkan piala</p>
     <p>Tekan tombol screenshot</p>
-    <h1><h1>
+    </div>
+    
+    <br></br>
+  
     <h2>Jangan lupa!</h2>
     <p>post di instagram dengan hash tag #NoPainNoGain #PFKMini ya!</p>
     <img src="insta.png" width="60%" height="auto">
-    
+    <br></br>
     <h2>Pemenang </h2><p>akan diumumkan pada tanggal <p><h2>24 Oktober 2021 </h2>
     <p>dan diberi hadiah menarik!</p>
     <br></br>  
@@ -89,6 +117,13 @@
   document.getElementById('1').src = "https://toffee888.github.io/88/";
   }
     
+  function hp() {
+  document.getElementById("hpt").style.display = "block";
+  }
+    
+    function pc() {
+  document.getElementById("pct").style.display = "block";
+  }
   </script>
     
   </body>
