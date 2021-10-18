@@ -15,6 +15,7 @@
   background-color: rgba(0,0,0,0.8);
   z-index: 2;
   cursor: pointer;
+  overflow-y: scroll;
 }
 
 #text{
@@ -31,7 +32,7 @@
   
   <body>
     
-  <div id="overlay" onclick="off()">
+  <div id="overlay">
   <div id="text">
     
     <p>Selamat datang ke AR Photo Contest!</p>
@@ -46,6 +47,7 @@
 
     <p>Jangan lupa post di instagran dengan hash tag #NoPainNoGain #PFKMini</p>
     <p>Have fun <3</p>
+    <p onclick="clicked()">Let's GO!</p>  
                 
     </div>
   </div>
@@ -55,15 +57,16 @@
   </div>
     
  <div>
-  <iframe src="https://toffee888.github.io/88/" height="100%" width="100%" title="AR Photo Contest" allow="camera *" crossorigin="anonymous"></iframe>
+  <iframe src="" id="1" height="100%" width="100%" title="AR Photo Contest" allow="camera *" crossorigin="anonymous"></iframe>
   </div>
     
-    <p></p>
+ 
     
   <script>
 
-  function off() {
+  function clicked() {
   document.getElementById("overlay").style.display = "none";
+  document.getElementById('1').src = "https://toffee888.github.io/88/";
   }
     
   </script>
